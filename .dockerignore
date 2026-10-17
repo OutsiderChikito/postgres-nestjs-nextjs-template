@@ -1,0 +1,24 @@
+# Dependencias y salidas de build (se regeneran dentro de la imagen)
+**/node_modules
+**/dist
+**/.next
+**/coverage
+**/*.tsbuildinfo
+
+# Control de versiones e IDE
+.git
+.github
+.vscode
+.idea
+
+# Secretos: nunca deben entrar al contexto
+.env
+.env.*
+!.env.example
+
+# No necesarios para construir
+docs
+db
+*.md
+docker-compose*.yml
+**/Dockerfile
